@@ -24,4 +24,4 @@ WORKDIR /home/appuser
 COPY --chown=appuser:appuser entrypoint.sh ./
 RUN chmod +x entrypoint.sh
 
-CMD ["./entrypoint.sh"]
+CMD ["/home/appuser/entrypoint.sh"]
